@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angular">
+<head>
+    <meta charset="UTF-8">
+    <title>Front End Assessment</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body>
+<!--This div wraps the entire page-->
+    <div class="site-wrapper">
+        <!--Here is your header with the navigation nested inside -->
+        <header class="site-header" role="banner">
+            <div class="container">
+              <!--Insert Logo directive here -->
+              <logo></logo>
+                <nav class="site-nav">
+                    <ul class="primary-nav">
+                      <li><a ui-sref="home">Home</a></li>
+                      <li><a ui-sref="about">About</a></li>
+                      <li><a ui-sref="blog">Blog</a></li>
+                      <li><a ui-sref="shop">Shop</a></li>
+                    </ul>
+                </nav>
+                <button class="hamburger toggle-nav js-toggle-nav" ng-click="showNav">
+                    <span class="hamburger-box"><span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+            </div>
+        </header>
+        <!--This is the main wrapper -->
+        <main class="site-main" role="main">
+
+        <ui-view></ui-view>
+
+        </main>
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!--Angular App-->
+<script src="js/app.js" charset="utf-8"></script>
+<script src="js/shopService.js" charset="utf-8"></script>
+<script src="js/productDetailsCtrl.js" charset="utf-8"></script>
+<script src="js/shopCtrl.js" charset="utf-8"></script>
+<script src="js/directives/logo.js" charset="utf-8"></script>
+<script src="js/directives/product.js" charset="utf-8"></script>
+</body>
+</html>

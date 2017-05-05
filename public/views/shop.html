@@ -5,7 +5,8 @@
 </section>
 <div class="product-grid__item   grid__item one-half large--one-third" >
 
-    <!--Repeat over your data and display it below -->
+<div ng-repeat="product in products">
+  <product id="{{product.id}}" title="{{product.title}}" desc = "{{product.desc}}" price="{{product.price}}" image="{{product.image}}"></product>
+</div>
 
-    
 </div>

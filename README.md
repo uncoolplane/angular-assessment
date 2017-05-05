@@ -37,17 +37,17 @@
 
   3. Ensure that the data that comes back from the request is saved in an array on $scope in your shopCtrl.
 
-  4. Now that we have our data, loop over you data in shop.html   There is some sample html in `product-tmpl.html` for what each product should look like.  
+  4. Now that we have our data, loop over you data in shop.html   There is some sample html in `product-tmpl.html` for what each product should look like.
 
   5. Setup the product-details.html page. You'll need to check the state params for the id being passed along in the route. After you have that id you'll need to make an api call to http://practiceapi.devmounta.in/products/ + the id being passed in the route. This will return the specific product based off the id you passed. Put that product on $scope and display in the view.
 
-  After your data is displaying correctly you'll need to get the product-details view configured. In your routes file add a route called details. This route is going to have to handle the productId correctly.  
+  After your data is displaying correctly you'll need to get the product-details view configured. In your routes file add a route called details. This route is going to have to handle the productId correctly.
 
   6. Each product needs to :
       - Be clickable on the title and navigate to the product details page passing along the detail of the item clicked on.
       - All the styles are completed for you already so you'll just need to display the data in the right spot. <strong>LOOK FOR COMMENTS.</strong>
 
-  
+
 ### Part 1c - Basic logo directive
 
   1. Every good company needs a logo. Your job is to create a logo using a Directive.
@@ -65,8 +65,8 @@
 
   1. Create a directive that shows an individual product. Move all the styling and data for a specific product into a directive. (The template already exists in `product-tmpl.html`).
 
-  1b. Add in new functionality to your directive.  Each product should now:  
-      - Be clickable on the image and collapse the image and show a link that says "show image" instead.   
+  1b. Add in new functionality to your directive.  Each product should now:
+      - Be clickable on the image and collapse the image and show a link that says "show image" instead.
       - Be clickable on "show image" and hide the "show image" link and show the actual image.
 
   2. Update your ng-repeat of products (on shop.html) to use the directive to display the product.
@@ -82,15 +82,15 @@
 
 ### Contributions
 
-#### 
- 
+####
+
 If you see a problem or a typo, please fork, make the necessary changes, and create a pull request so we can review your changes and merge them into the master repo and branch.
 
 ## Copyright
 
 ### Copyright
 
-#### 
+####
 
 © DevMountain LLC, 2017. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
 
